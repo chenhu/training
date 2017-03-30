@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.jsits.training.jdk6.jmx.mbeans.SysConfigMBean;
-import com.jsits.training.jdk6.jmx.mbeans.TransportaionSysconfig;
+import com.jsits.training.jdk6.jmx.mbeans.SysConfig;
 
 public class RunServer {
     
@@ -18,7 +18,7 @@ public class RunServer {
     public static void main(String... strings) throws Exception {
         MBeanServer mbeanServer = ManagementFactory.getPlatformMBeanServer();
         ObjectName name = new ObjectName("com.jsits.training.mbeans:type=SysConfig");
-        SysConfigMBean configBean = new TransportaionSysconfig();
+        SysConfigMBean configBean = new SysConfig();
         mbeanServer.registerMBean(configBean, name);
         log.debug("Waiting forever ... ...");
         Thread.sleep(Long.MAX_VALUE);

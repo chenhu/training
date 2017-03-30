@@ -3,11 +3,11 @@ package com.jsits.training.jdk6.jmx.mbeans;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class TransportaionSysconfig implements SysConfigMBean {
+public class SysConfig implements SysConfigMBean {
 
     private String serverId = "1";
 
-    private static final Logger log = LoggerFactory.getLogger(TransportaionSysconfig.class.getName());
+    private static final Logger log = LoggerFactory.getLogger(SysConfig.class.getName());
 
     @Override
     public String getServerId() {
