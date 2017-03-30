@@ -3,7 +3,7 @@ package com.jsits.training.jdk6.jmx.mbeans;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class TransportaionSysconfig implements SysConfig {
+public class TransportaionSysconfig implements SysConfigMBean {
 
     private String serverId = "1";
 

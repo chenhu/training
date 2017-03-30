@@ -1,13 +1,10 @@
 package com.jsits.training.jdk6.jmx.mbeans;
 
-import javax.management.MXBean;
-
 /**
  * @author chenhu
  *  System configuration
  */
-@MXBean
-public interface SysConfig {
+public interface SysConfigMBean {
     
     public String getServerId();
 
